@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msg:ClientAddRS xmlns:header="http://legalservices.gov.uk/Enterprise/Common/1.0/Header"
+ xmlns:common="http://legalservices.gov.uk/Enterprise/Common/1.0/Common"
+ xmlns:Crncy="http://legalservices.gov.uk/Schema/Enterprise/External/ISO/Currency/4217/2001/Currency"
+ xmlns:Cntry="http://legalservices.gov.uk/Schema/Enterprise/External/ISO/Country/3166-1/2006/Country"
+ xmlns:Lang="http://legalservices.gov.uk/Schema/Enterprise/External/ISO/Language/639-3/2007/Language"
+ xmlns:msg="http://legalservices.gov.uk/CCMS/ClientManagement/Client/1.0/ClientBIM"
+ xmlns:client="http://legalservices.gov.uk/CCMS/ClientManagement/Client/1.0/ClientBIO"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://legalservices.gov.uk/CCMS/ClientManagement/Client/1.0/ClientBIM file:/C:/LSC/Schema/Schema/BusinessObjects/CCMS/ClientManagement/Client/1.0/ClientBIM.xsd">
+    <header:HeaderRS>
+        <header:TransactionID>456745</header:TransactionID>
+        <header:RequestDetails>
+            <header:TransactionRequestID>456745</header:TransactionRequestID>
+            <header:Language>AAR</header:Language>
+            <header:TransactionIDREF>TransactionIDRE</header:TransactionIDREF>
+            <header:TransactionName>TransactionName</header:TransactionName>
+            <header:Source>Oracle EBusiness</header:Source>
+            <header:Target>PUI</header:Target>
+            <header:HostName>HostName</header:HostName>
+            <header:UserName>UserName</header:UserName>
+            <header:UserRole>UserRole</header:UserRole>
+            <header:ApplicationResponsibility>ApplicationResponsibility</header:ApplicationResponsibility>
+            <header:TimeStamp>2006-05-04T18:13:51.0Z</header:TimeStamp>
+        </header:RequestDetails>
+        <header:ResultCount>0</header:ResultCount>
+        <header:Status>
+            <header:Status>Success</header:Status>
+            <header:StatusFreeText>StatusFreeText</header:StatusFreeText>
+            <header:Exceptions>
+                <header:ObjectPath>ObjectPath</header:ObjectPath>
+                <header:StatusCode>0</header:StatusCode>
+                <header:StatusText>StatusText</header:StatusText>
+            </header:Exceptions>
+        </header:Status>
+    </header:HeaderRS>
+    <msg:TransactionID>456745</msg:TransactionID>
+</msg:ClientAddRS>

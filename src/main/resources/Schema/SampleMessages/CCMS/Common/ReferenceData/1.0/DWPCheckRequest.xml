@@ -1,0 +1,52 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header xmlns:ns1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <ns1:Security>
+            <ns1:UsernameToken>
+                <ns1:Username>JFERREIRA</ns1:Username>
+                <ns1:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">welcome1</ns1:Password>
+            </ns1:UsernameToken>
+        </ns1:Security>
+    </soap:Header>
+    <soap:Body xmlns:ns2="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIM">
+        <ns2:ReferenceDataInqRQ xmlns:ns3="http://legalservices.gov.uk/Enterprise/Common/1.0/Header">
+            <ns3:HeaderRQ>
+                <ns3:TransactionRequestID>123</ns3:TransactionRequestID>
+                <ns3:Language>ENG</ns3:Language>
+                <ns3:TransactionIDREF></ns3:TransactionIDREF>
+                <ns3:TransactionName></ns3:TransactionName>
+                <ns3:Source>Oracle EBusiness</ns3:Source>
+                <ns3:Target>Oracle EBusiness</ns3:Target>
+                <ns3:HostName></ns3:HostName>
+                <ns3:UserLoginID>JFERREIRA</ns3:UserLoginID>
+                <ns3:UserRole>role</ns3:UserRole>
+                <ns3:ApplicationResponsibility></ns3:ApplicationResponsibility>
+                <ns3:TimeStamp></ns3:TimeStamp>
+            </ns3:HeaderRQ>
+            <ns2:RecordCount xmlns:ns4="http://legalservices.gov.uk/Enterprise/Common/1.0/Common">
+                <ns4:MaxRecordsToFetch>10</ns4:MaxRecordsToFetch>
+                <ns4:RecordsFetched></ns4:RecordsFetched>
+                <ns4:RetriveDataOnMaxCount>false</ns4:RetriveDataOnMaxCount>
+                <ns4:SortCriteria></ns4:SortCriteria>
+            </ns2:RecordCount>
+            <ns2:SearchCriteria xmlns:ns5="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIO">
+                <ns5:ContextKey>DWP</ns5:ContextKey>
+                <ns5:SearchKey>
+                    <ns5:Key>SurName</ns5:Key>
+                    <ns5:Value>TIGER</ns5:Value>
+                </ns5:SearchKey>
+                <ns5:SearchKey>
+                    <ns5:Key>BirthDate</ns5:Key>
+                    <ns5:Value>11/11/2011</ns5:Value>
+                </ns5:SearchKey>
+                <ns5:SearchKey>
+                    <ns5:Key>NINumber</ns5:Key>
+                    <ns5:Value>222</ns5:Value>
+                </ns5:SearchKey>
+                <ns5:SearchKey>
+                    <ns5:Key>AwardDate</ns5:Key>
+                    <ns5:Value>10/10/2011</ns5:Value>
+                </ns5:SearchKey>
+            </ns2:SearchCriteria>
+        </ns2:ReferenceDataInqRQ>
+    </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,31 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body xmlns:ns1="http://legalservices.gov.uk/CCMS/CaseManagement/Case/1.0/CaseBIM">
+        <ns1:ProviderRequestAddRQ xmlns:ns2="http://legalservices.gov.uk/Enterprise/Common/1.0/Header">
+            <ns2:HeaderRQ>
+                <ns2:TransactionRequestID>171110</ns2:TransactionRequestID>
+                <ns2:Language>ENG</ns2:Language>
+                <ns2:TransactionIDREF>171110</ns2:TransactionIDREF>
+                <ns2:TransactionName>CreateNotification</ns2:TransactionName>
+                <ns2:Source>PUI</ns2:Source>
+                <ns2:Target>Oracle EBusiness</ns2:Target>
+                <ns2:UserName>AMOHAMMED</ns2:UserName>
+                <ns2:ApplicationResponsibility>Receivables Manager</ns2:ApplicationResponsibility>
+            </ns2:HeaderRQ>
+            <ns1:RequestDetails xmlns:ns3="http://legalservices.gov.uk/CCMS/CaseManagement/Case/1.0/CaseBIO">
+                <ns3:CaseReferenceNumber>TEST MOD181 Case</ns3:CaseReferenceNumber>
+                <ns3:User xmlns:ns4="http://legalservices.gov.uk/Enterprise/Common/1.0/Common">
+                    <ns4:UserID>1314</ns4:UserID>
+                </ns3:User>
+                <ns3:RequestDetails>
+                    <ns3:Request>
+                        <ns3:RequestType>Meeting</ns3:RequestType>
+                        <ns3:RequestText>
+                            <ns3:Label>Test_Label</ns3:Label>
+                            <ns3:Text>This is a test create notification note.</ns3:Text>
+                        </ns3:RequestText>
+                    </ns3:Request>
+                </ns3:RequestDetails>
+            </ns1:RequestDetails>
+        </ns1:ProviderRequestAddRQ>
+    </soap:Body>
+</soap:Envelope>

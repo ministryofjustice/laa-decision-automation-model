@@ -1,0 +1,21 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body xmlns:ns1="http://legalservices.gov.uk/CCMS/Finance/Payables/1.0/BillingBIM">
+        <ns1:CaseSOAInqRQ xmlns:ns2="http://legalservices.gov.uk/Enterprise/Common/1.0/Header">
+            <ns2:HeaderRQ>
+                <ns2:TransactionRequestID>291110</ns2:TransactionRequestID>
+                <ns2:Language>ENG</ns2:Language>
+                <ns2:TransactionIDREF>291110</ns2:TransactionIDREF>
+                <ns2:TransactionName>GetCaseStmtOfAccount</ns2:TransactionName>
+                <ns2:Source>PUI</ns2:Source>
+                <ns2:Target>Oracle EBusiness</ns2:Target>
+                <ns2:UserName>AMOHAMMED</ns2:UserName>
+                <ns2:ApplicationResponsibility>Receivables Manager</ns2:ApplicationResponsibility>
+            </ns2:HeaderRQ>
+            <ns1:RecordCount xmlns:ns3="http://legalservices.gov.uk/Enterprise/Common/1.0/Common">
+                <ns3:MaxRecordsToFetch>10</ns3:MaxRecordsToFetch>
+                <ns3:RetriveDataOnMaxCount>true</ns3:RetriveDataOnMaxCount>
+            </ns1:RecordCount>
+            <ns1:CaseReferenceNumber>TOP_123_ORG</ns1:CaseReferenceNumber>
+        </ns1:CaseSOAInqRQ>
+    </soap:Body>
+</soap:Envelope>

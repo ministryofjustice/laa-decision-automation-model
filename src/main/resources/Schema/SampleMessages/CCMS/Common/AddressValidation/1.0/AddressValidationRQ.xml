@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msg:AddressValidationInqRQ xmlns:header="http://legalservices.gov.uk/Enterprise/Common/1.0/Header"
+ xmlns:common="http://legalservices.gov.uk/Enterprise/Common/1.0/Common"
+ xmlns:msg="http://legalservices.gov.uk/CCMS/Common/AddressValidation/1.0/AddressValidationBIM"
+ xmlns:Crncy="http://legalservices.gov.uk/Schema/Enterprise/External/ISO/Currency/4217/2001/Currency"
+ xmlns:Cntry="http://legalservices.gov.uk/Schema/Enterprise/External/ISO/Country/3166-1/2006/Country"
+ xmlns:Lang="http://legalservices.gov.uk/Schema/Enterprise/External/ISO/Language/639-3/2007/Language"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://legalservices.gov.uk/CCMS/Common/AddressValidation/1.0/AddressValidationBIM file:/C:/LSC/Schema/Schema/BusinessObjects/CCMS/Common/AddressValidaion/1.0/AddressValidationBIM.xsd">
+    <header:HeaderRQ>
+        <header:TransactionRequestID>656775</header:TransactionRequestID>
+        <header:Language>AAR</header:Language>
+    </header:HeaderRQ>
+</msg:AddressValidationInqRQ>

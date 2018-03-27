@@ -1,0 +1,33 @@
+buildscript{
+    repositories{
+       jcenter()
+        mavenCentral()
+       
+    }
+    dependencies {
+        classpath 'no.nils:wsdl2java:0.10'
+    }
+}
+apply plugin: 'java-library'
+apply plugin: 'maven-publish'
+
+
+group = 'com.laa'
+version = '0.0.1-SNAPSHOT'
+// In this section you declare where to find the dependencies of your project
+repositories {
+
+mavenCentral()
+}
+
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+
+

@@ -1,0 +1,50 @@
+<env:Envelope
+  xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:wsa="http://www.w3.org/2005/08/addressing">
+ <env:Header>
+  <wsa:MessageID>urn:E800EDB0ECCD11DFBF936347F8DCEDE6</wsa:MessageID>
+  <wsa:ReplyTo>
+   <wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+  </wsa:ReplyTo>
+ </env:Header>
+ <env:Body>
+  <ContractDetailsRS
+    xmlns:msg="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIM"
+    xmlns="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIM">
+   <header:HeaderRS
+     xmlns:header="http://legalservices.gov.uk/Enterprise/Common/1.0/Header">
+    <header:RequestDetails>
+     <header:TransactionRequestID>16010</header:TransactionRequestID>
+     <header:Language>ENG</header:Language>
+     <header:TransactionIDREF/>
+     <header:TransactionName/>
+     <header:Source>Oracle EBusiness</header:Source>
+     <header:Target>Oracle EBusiness</header:Target>
+     <header:HostName/>
+     <header:UserName>AMOHAMMED</header:UserName>
+     <header:UserRole/>
+     <header:ApplicationResponsibility/>
+     <header:TimeStamp/>
+    </header:RequestDetails>
+    <header:Status>
+     <header:Status>Success</header:Status>
+     <header:StatusFreeText/>
+    </header:Status>
+   </header:HeaderRS>
+   <msg:ContractDetails>
+    <msg:ContractDetail>
+     <refdata:CategoryofLawAuthorisations
+       xmlns:refdata="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIO">Category of Law 1</refdata:CategoryofLawAuthorisations>
+     <refdata:SubCategoryAuthorisation
+       xmlns:refdata="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIO">Service Combination 2</refdata:SubCategoryAuthorisation>
+     <refdata:AuthorisationType
+       xmlns:refdata="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIO">Contingent Liability</refdata:AuthorisationType>
+     <refdata:ContractualDevolvedPowers
+       xmlns:refdata="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIO">N</refdata:ContractualDevolvedPowers>
+     <refdata:RemainderAuthorisation
+       xmlns:refdata="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIO">N</refdata:RemainderAuthorisation>
+    </msg:ContractDetail>
+   </msg:ContractDetails>
+  </ContractDetailsRS>
+ </env:Body>
+</env:Envelope>

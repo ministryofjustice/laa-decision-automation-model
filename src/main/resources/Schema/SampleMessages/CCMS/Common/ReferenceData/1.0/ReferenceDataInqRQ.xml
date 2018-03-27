@@ -1,0 +1,22 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body xmlns:ns1="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIM">
+        <ns1:ReferenceDataInqRQ xmlns:ns2="http://legalservices.gov.uk/Enterprise/Common/1.0/Header">
+            <ns2:HeaderRQ>
+                <ns2:TransactionRequestID>16010</ns2:TransactionRequestID>
+                <ns2:Language>ENG</ns2:Language>
+                <ns2:TransactionIDREF></ns2:TransactionIDREF>
+                <ns2:TransactionName></ns2:TransactionName>
+                <ns2:Source>Oracle EBusiness</ns2:Source>
+                <ns2:Target>Oracle EBusiness</ns2:Target>
+                <ns2:HostName></ns2:HostName>
+                <ns2:UserName>AMOHAMMED</ns2:UserName>
+                <ns2:UserRole></ns2:UserRole>
+                <ns2:ApplicationResponsibility></ns2:ApplicationResponsibility>
+                <ns2:TimeStamp></ns2:TimeStamp>
+            </ns2:HeaderRQ>
+            <ns1:SearchCriteria xmlns:ns3="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIO">
+                <ns3:ContextKey>CaseReferenceNumber</ns3:ContextKey>
+            </ns1:SearchCriteria>
+        </ns1:ReferenceDataInqRQ>
+    </soap:Body>
+</soap:Envelope>

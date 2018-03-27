@@ -1,0 +1,38 @@
+<env:Envelope
+  xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:wsa="http://www.w3.org/2005/08/addressing">
+ <env:Header>
+  <wsa:MessageID>urn:AD5EB630A58E11E1AF290F4E73E6F040</wsa:MessageID>
+  <wsa:ReplyTo>
+   <wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+  </wsa:ReplyTo>
+ </env:Header>
+ <env:Body>
+  <ReferenceDataInqRS
+    xmlns:msg="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIM"
+    xmlns="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIM">
+   <header:HeaderRS
+     xmlns:header="http://legalservices.gov.uk/Enterprise/Common/1.0/Header">
+    <header:RequestDetails>
+     <header:TransactionRequestID>123</header:TransactionRequestID>
+     <header:Language>ENG</header:Language>
+     <header:Source>Oracle EBusiness</header:Source>
+     <header:Target>Oracle EBusiness</header:Target>
+     <header:UserLoginID>JFERREIRA</header:UserLoginID>
+     <header:UserRole>role</header:UserRole>
+    </header:RequestDetails>
+    <header:Status>
+     <header:Status>SUCCESS</header:Status>
+     <header:StatusFreeText>Success</header:StatusFreeText>
+    </header:Status>
+   </header:HeaderRS>
+   <msg:RecordCount>
+    <common:MaxRecordsToFetch
+      xmlns:common="http://legalservices.gov.uk/Enterprise/Common/1.0/Common">10</common:MaxRecordsToFetch>
+    <common:RetriveDataOnMaxCount
+      xmlns:common="http://legalservices.gov.uk/Enterprise/Common/1.0/Common">false</common:RetriveDataOnMaxCount>
+   </msg:RecordCount>
+   <msg:Results>YES</msg:Results>
+  </ReferenceDataInqRS>
+ </env:Body>
+</env:Envelope>

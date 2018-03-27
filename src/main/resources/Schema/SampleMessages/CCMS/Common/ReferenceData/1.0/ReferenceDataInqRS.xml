@@ -1,0 +1,38 @@
+<env:Envelope
+  xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:wsa="http://www.w3.org/2005/08/addressing">
+ <env:Header>
+  <wsa:MessageID>urn:05459350E7EF11DFBFE66347F8DCEDE6</wsa:MessageID>
+  <wsa:ReplyTo>
+   <wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+  </wsa:ReplyTo>
+ </env:Header>
+ <env:Body>
+  <ReferenceDataInqRS
+    xmlns:ns3="http://xmlns.oracle.com/pcbpel/adapter/db/APPS/XXCCMS_REFERENCE_DATA/GET_REFERENCE_DATA/"
+    xmlns:msg="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIM"
+    xmlns="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIM">
+   <header:HeaderRS
+     xmlns:header="http://legalservices.gov.uk/Enterprise/Common/1.0/Header">
+    <header:RequestDetails>
+     <header:TransactionRequestID>16010</header:TransactionRequestID>
+     <header:Language>ENG</header:Language>
+     <header:TransactionIDREF/>
+     <header:TransactionName/>
+     <header:Source>Oracle EBusiness</header:Source>
+     <header:Target>Oracle EBusiness</header:Target>
+     <header:HostName/>
+     <header:UserName>AMOHAMMED</header:UserName>
+     <header:UserRole/>
+     <header:ApplicationResponsibility/>
+     <header:TimeStamp/>
+    </header:RequestDetails>
+    <header:Status>
+     <header:Status>SUCCESS</header:Status>
+     <header:StatusFreeText/>
+    </header:Status>
+   </header:HeaderRS>
+   <msg:Results>26</msg:Results>
+  </ReferenceDataInqRS>
+ </env:Body>
+</env:Envelope>

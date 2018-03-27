@@ -1,0 +1,37 @@
+<env:Envelope
+  xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:wsa="http://www.w3.org/2005/08/addressing">
+ <env:Header>
+  <wsa:MessageID>urn:8612EE90ECCE11DFBF936347F8DCEDE6</wsa:MessageID>
+  <wsa:ReplyTo>
+   <wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+  </wsa:ReplyTo>
+ </env:Header>
+ <env:Body>
+  <ContractDetailsRS
+    xmlns:msg="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIM"
+    xmlns="http://legalservices.gov.uk/CCMS/Common/ReferenceData/1.0/ReferenceDataBIM">
+   <header:HeaderRS
+     xmlns:header="http://legalservices.gov.uk/Enterprise/Common/1.0/Header">
+    <header:RequestDetails>
+     <header:TransactionRequestID>16010</header:TransactionRequestID>
+     <header:Language>ENG</header:Language>
+     <header:TransactionIDREF/>
+     <header:TransactionName/>
+     <header:Source>Oracle EBusiness</header:Source>
+     <header:Target>Oracle EBusiness</header:Target>
+     <header:HostName/>
+     <header:UserName>AMOHAMMED</header:UserName>
+     <header:UserRole/>
+     <header:ApplicationResponsibility/>
+     <header:TimeStamp/>
+    </header:RequestDetails>
+    <header:Status>
+     <header:Status>Sucess</header:Status>
+     <header:StatusFreeText>No records found for search criteria</header:StatusFreeText>
+    </header:Status>
+   </header:HeaderRS>
+   <msg:ContractDetails/>
+  </ContractDetailsRS>
+ </env:Body>
+</env:Envelope>
