@@ -3,15 +3,12 @@ package com.laa.model;
 import java.time.LocalDate;
 
 public abstract class Case {
-	
+
 	private String firstName;
-	
-	private String lastName;
-	
+	private String lastname;
 	private LocalDate dob;
-	
 	private MeansInformation meansInformation;
-	
+
 
 	public String getFirstName() {
 		return firstName;
@@ -21,12 +18,12 @@ public abstract class Case {
 		this.firstName = firstName;
 	}
 
-	public String getLastName() {
-		return lastName;
+	public String getLastname() {
+		return lastname;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public LocalDate getDob() {
@@ -44,5 +41,7 @@ public abstract class Case {
 	public void setMeansInformation(MeansInformation meansInformation) {
 		this.meansInformation = meansInformation;
 	}
+	
+	
 
 }

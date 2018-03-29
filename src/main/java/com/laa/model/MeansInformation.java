@@ -1,32 +1,61 @@
 package com.laa.model;
 
-import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MeansInformation {
 	
-	private Boolean passportedBenefit = false;
-	
-	private BigDecimal totalIncome;
-	
-	
 
-	public Boolean getPassportedBenefit() {
-		return passportedBenefit;
+	private Applicant applicant;
+	
+	private Partner partner;
+	
+	private List<Dependent> dependents;
+	
+	private List<Outgoing> outgoings;
+	
+	private List<BankAccount> bankAccounts = new ArrayList<>();
+
+	public Applicant getApplicant() {
+		return applicant;
 	}
 
-	public void setPassportedBenefit(Boolean passportedBenefit) {
-		this.passportedBenefit = passportedBenefit;
+	public void setApplicant(Applicant applicant) {
+		this.applicant = applicant;
 	}
 
-	public BigDecimal getTotalIncome() {
-		return totalIncome;
+	public Partner getPartner() {
+		return partner;
 	}
 
-	public void setTotalIncome(BigDecimal totalIncome) {
-		this.totalIncome = totalIncome;
+	public void setPartner(Partner partner) {
+		this.partner = partner;
 	}
-	
-	
+
+	public List<Dependent> getDependents() {
+		return dependents;
+	}
+
+	public void setDependents(List<Dependent> dependents) {
+		this.dependents = dependents;
+	}
+
+	public List<Outgoing> getOutgoings() {
+		return outgoings;
+	}
+
+	public void setOutgoings(List<Outgoing> outgoings) {
+		this.outgoings = outgoings;
+	}
+
+	public List<BankAccount> getBankAccounts() {
+		return bankAccounts;
+	}
+
+	public void setBankAccounts(List<BankAccount> bankAccounts) {
+		this.bankAccounts = bankAccounts;
+	}
+
 	
 	
 	
