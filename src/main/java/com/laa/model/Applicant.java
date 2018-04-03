@@ -6,9 +6,9 @@ public class Applicant {
 	
 	private List<EmployedIncome> employedIncomeHistory;
 
-	private OtherIncome otherIncome;
+	private List<OtherIncome> otherIncome;
 
-	private CapitalAssets capitalAssets;
+	private List<CapitalAssets> capitalAssets;
 
 
 	public List<EmployedIncome> getEmployedIncomeHistory() {
@@ -19,20 +19,22 @@ public class Applicant {
 		this.employedIncomeHistory = employedIncomeHistory;
 	}
 
-	public OtherIncome getOtherIncome() {
+	public List<OtherIncome> getOtherIncome() {
 		return otherIncome;
 	}
 
-	public void setOtherIncome(OtherIncome otherIncome) {
+	public void setOtherIncome(List<OtherIncome> otherIncome) {
 		this.otherIncome = otherIncome;
 	}
 
-	public CapitalAssets getCapitalAssets() {
+	public List<CapitalAssets> getCapitalAssets() {
 		return capitalAssets;
 	}
 
-	public void setCapitalAssets(CapitalAssets capitalAssets) {
+	public void setCapitalAssets(List<CapitalAssets> capitalAssets) {
 		this.capitalAssets = capitalAssets;
 	}
+
+	
 
 }

@@ -10,14 +10,30 @@ public class CivilDecisionReport extends DecisionReport {
 	private EmploymentStatus emplyomentStatus;
 
 	private BigDecimal employmentIncome;
+	
+	private BigDecimal payeAndNi;
+	
+	private BigDecimal otherIncome;
+	
+	private BigDecimal grossIncome;
+	
+	private BigDecimal totalOutgoings;
 
 	private BigDecimal disposableIncome;
 	
-	private Boolean exceedsThreshold;
+	private BigDecimal capitalAssessment;
+	
+	private boolean withinGrossIncomeLimit;
+	
+	private boolean withinDisposableIncomeLimit;
+	
+	private boolean withinCapitalAssetsLimit;
+	
+	private boolean exceedsThreshold;
 	
 	private boolean domesticViolenceWaiver;
-
 	
+	private boolean measnPassed;
 
 	public EmploymentStatus getEmplyomentStatus() {
 		return emplyomentStatus;
@@ -35,6 +51,38 @@ public class CivilDecisionReport extends DecisionReport {
 		this.employmentIncome = employmentIncome;
 	}
 
+	public BigDecimal getPayeAndNi() {
+		return payeAndNi;
+	}
+
+	public void setPayeAndNi(BigDecimal payeAndNi) {
+		this.payeAndNi = payeAndNi;
+	}
+
+	public BigDecimal getOtherIncome() {
+		return otherIncome;
+	}
+
+	public void setOtherIncome(BigDecimal otherIncome) {
+		this.otherIncome = otherIncome;
+	}
+
+	public BigDecimal getGrossIncome() {
+		return grossIncome;
+	}
+
+	public void setGrossIncome(BigDecimal grossIncome) {
+		this.grossIncome = grossIncome;
+	}
+
+	public BigDecimal getTotalOutgoings() {
+		return totalOutgoings;
+	}
+
+	public void setTotalOutgoings(BigDecimal totalOutgoings) {
+		this.totalOutgoings = totalOutgoings;
+	}
+
 	public BigDecimal getDisposableIncome() {
 		return disposableIncome;
 	}
@@ -42,12 +90,45 @@ public class CivilDecisionReport extends DecisionReport {
 	public void setDisposableIncome(BigDecimal disposableIncome) {
 		this.disposableIncome = disposableIncome;
 	}
+
+	public BigDecimal getCapitalAssessment() {
+		return capitalAssessment;
+	}
+
+	public void setCapitalAssessment(BigDecimal capitalAssessment) {
+		this.capitalAssessment = capitalAssessment;
+	}
+
+	public boolean isWithinGrossIncomeLimit() {
+		return withinGrossIncomeLimit;
+	}
+
+	public void setWithinGrossIncomeLimit(boolean withinGrossIncomeLimit) {
+		this.withinGrossIncomeLimit = withinGrossIncomeLimit;
+	}
+
+	public boolean isWithinDisposableIncomeLimit() {
+		return withinDisposableIncomeLimit;
+	}
+
+	public void setWithinDisposableIncomeLimit(boolean withinDisposableIncomeLimit) {
+		this.withinDisposableIncomeLimit = withinDisposableIncomeLimit;
+	}
+
 	
-	public Boolean getExceedsThreshold() {
+	public boolean isWithinCapitalAssetsLimit() {
+		return withinCapitalAssetsLimit;
+	}
+
+	public void setWithinCapitalAssetsLimit(boolean withinCapitalAssetsLimit) {
+		this.withinCapitalAssetsLimit = withinCapitalAssetsLimit;
+	}
+
+	public boolean isExceedsThreshold() {
 		return exceedsThreshold;
 	}
 
-	public void setExceedsThreshold(Boolean exceedsThreshold) {
+	public void setExceedsThreshold(boolean exceedsThreshold) {
 		this.exceedsThreshold = exceedsThreshold;
 	}
 
@@ -58,7 +139,13 @@ public class CivilDecisionReport extends DecisionReport {
 	public void setDomesticViolenceWaiver(boolean domesticViolenceWaiver) {
 		this.domesticViolenceWaiver = domesticViolenceWaiver;
 	}
-	
-	
+
+	public boolean isMeasnPassed() {
+		return measnPassed;
+	}
+
+	public void setMeasnPassed(boolean measnPassed) {
+		this.measnPassed = measnPassed;
+	}
 
 }

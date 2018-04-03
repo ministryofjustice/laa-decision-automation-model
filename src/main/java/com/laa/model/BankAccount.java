@@ -9,6 +9,7 @@ public class BankAccount {
 	
 	private AccountType accountType;
 	private AccountOwnerType accountOwner;
+	private String accountNumber;
 	private boolean  wagesAndBenefitsPaidhere;
 	
 	private BigDecimal balance=BigDecimal.ZERO;
@@ -27,6 +28,14 @@ public class BankAccount {
 
 	public void setAccountOwner(AccountOwnerType accountOwner) {
 		this.accountOwner = accountOwner;
+	}
+
+	public String getAccountNumber() {
+		return accountNumber;
+	}
+
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
 	}
 
 	public boolean isWagesAndBenefitsPaidhere() {

@@ -3,6 +3,7 @@ package com.laa.model;
 import java.math.BigDecimal;
 
 import com.laa.model.civil.enums.OutgoingType;
+import com.laa.model.civil.enums.PaymentFrequency;
 
 public class Outgoing {
 	
@@ -10,7 +11,7 @@ public class Outgoing {
 	
 	private BigDecimal amount;
 	
-	private String frequency;
+	private PaymentFrequency frequency;
 
 	public OutgoingType getOutGoingType() {
 		return outGoingType;
@@ -28,14 +29,14 @@ public class Outgoing {
 		this.amount = amount;
 	}
 
-	public String getFrequency() {
+	public PaymentFrequency getFrequency() {
 		return frequency;
 	}
 
-	public void setFrequency(String frequency) {
+	public void setFrequency(PaymentFrequency frequency) {
 		this.frequency = frequency;
 	}
-	
-	
+
+
 
 }

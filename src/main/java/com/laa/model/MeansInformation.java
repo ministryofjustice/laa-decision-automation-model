@@ -14,6 +14,8 @@ public class MeansInformation {
 	
 	private List<Outgoing> outgoings;
 	
+	private List<Property> properties;
+	
 	private List<BankAccount> bankAccounts = new ArrayList<>();
 
 	public Applicant getApplicant() {
@@ -46,6 +48,14 @@ public class MeansInformation {
 
 	public void setOutgoings(List<Outgoing> outgoings) {
 		this.outgoings = outgoings;
+	}
+
+	public List<Property> getProperties() {
+		return properties;
+	}
+
+	public void setProperties(List<Property> properties) {
+		this.properties = properties;
 	}
 
 	public List<BankAccount> getBankAccounts() {
