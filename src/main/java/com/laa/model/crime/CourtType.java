@@ -1,5 +1,5 @@
 package com.laa.model.crime;
 
-public enum Court {
+public enum CourtType {
     MAGISTRATE, CROWN
 }

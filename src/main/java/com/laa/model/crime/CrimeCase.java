@@ -6,7 +6,7 @@ public class CrimeCase  extends Case{
 	
 	private InterestOfJustice interestOfJustice;
 
-	private Court court;
+	private CourtType courtType;
 
 	private CaseType caseType;
 
@@ -18,13 +18,6 @@ public class CrimeCase  extends Case{
 		this.interestOfJustice = interestOfJustice;
 	}
 
-    public Court getCourt() {
-        return court;
-    }
-
-    public void setCourt(Court court) {
-        this.court = court;
-    }
 
     public CaseType getCaseType() {
         return caseType;
@@ -32,5 +25,13 @@ public class CrimeCase  extends Case{
 
     public void setCaseType(CaseType caseType) {
         this.caseType = caseType;
+    }
+
+    public CourtType getCourtType() {
+        return courtType;
+    }
+
+    public void setCourtType(CourtType courtType) {
+        this.courtType = courtType;
     }
 }
