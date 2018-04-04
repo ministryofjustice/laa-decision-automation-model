@@ -19,6 +19,9 @@ public class Property {
 	
 	private BigDecimal amountInPrinciple;
 
+	private boolean subjectToProceedings;
+	
+	private BigDecimal ownserhipSharePct;
 
 	public PropertyType getPropertyType() {
 		return propertyType;
@@ -67,6 +70,22 @@ public class Property {
 	public void setAmountInPrinciple(BigDecimal amountInPrinciple) {
 		this.amountInPrinciple = amountInPrinciple;
 	}
+
+	public boolean isSubjectToProceedings() {
+		return subjectToProceedings;
+	}
+
+	public void setSubjectToProceedings(boolean subjectToProceedings) {
+		this.subjectToProceedings = subjectToProceedings;
+	}
+
+	public BigDecimal getOwnserhipSharePct() {
+		return ownserhipSharePct;
+	}
+
+	public void setOwnserhipSharePct(BigDecimal ownserhipSharePct) {
+		this.ownserhipSharePct = ownserhipSharePct;
+	}
 	
-	
+
 }
