@@ -32,63 +32,56 @@ public class CrimeMeansDecisionReport extends DecisionReport {
         return crimeAssessmentResult;
     }
 
-    public CrimeMeansDecisionReport setCrimeAssessmentResult(CrimeAssessmentResult crimeAssessmentResult) {
+    public void setCrimeAssessmentResult(CrimeAssessmentResult crimeAssessmentResult) {
         this.crimeAssessmentResult = crimeAssessmentResult;
-        return this;
     }
 
     public EmploymentStatus getEmplyomentStatus() {
         return emplyomentStatus;
     }
 
-    public CrimeMeansDecisionReport setEmplyomentStatus(EmploymentStatus emplyomentStatus) {
+    public void setEmplyomentStatus(EmploymentStatus emplyomentStatus) {
         this.emplyomentStatus = emplyomentStatus;
-        return this;
     }
 
     public BigDecimal getEmploymentIncome() {
         return employmentIncome;
     }
 
-    public CrimeMeansDecisionReport setEmploymentIncome(BigDecimal employmentIncome) {
+    public void setEmploymentIncome(BigDecimal employmentIncome) {
         this.employmentIncome = employmentIncome;
-        return this;
     }
 
     public BigDecimal getPayeAndNi() {
         return payeAndNi;
     }
 
-    public CrimeMeansDecisionReport setPayeAndNi(BigDecimal payeAndNi) {
+    public void setPayeAndNi(BigDecimal payeAndNi) {
         this.payeAndNi = payeAndNi;
-        return this;
     }
 
     public BigDecimal getOtherIncome() {
         return otherIncome;
     }
 
-    public CrimeMeansDecisionReport setOtherIncome(BigDecimal otherIncome) {
+    public void setOtherIncome(BigDecimal otherIncome) {
         this.otherIncome = otherIncome;
-        return this;
     }
 
     public BigDecimal getGrossHouseholdIncome() {
         return grossHouseholdIncome;
     }
 
-    public CrimeMeansDecisionReport setGrossHouseholdIncome(BigDecimal grossHouseholdIncome) {
+    public void setGrossHouseholdIncome(BigDecimal grossHouseholdIncome) {
         this.grossHouseholdIncome = grossHouseholdIncome;
-        return this;
     }
 
     public BigDecimal getAdjustedIncome() {
         return adjustedIncome;
     }
 
-    public CrimeMeansDecisionReport setAdjustedIncome(BigDecimal adjustedIncome) {
+    public void setAdjustedIncome(BigDecimal adjustedIncome) {
         this.adjustedIncome = adjustedIncome;
-        return this;
     }
 
     public BigDecimal getWeighting() {
