@@ -10,6 +10,7 @@ public class BankAccount {
 	private AccountType accountType;
 	private AccountOwnerType accountOwner;
 	private String accountNumber;
+	private String sortCode;
 	private boolean  wagesAndBenefitsPaidhere;
 	
 	private BigDecimal balance=BigDecimal.ZERO;
@@ -54,4 +55,12 @@ public class BankAccount {
 		this.balance = balance;
 	}
 
+	public String getSortCode() {
+		return sortCode;
+	}
+
+	public BankAccount setSortCode(String sortCode) {
+		this.sortCode = sortCode;
+		return this;
+	}
 }
