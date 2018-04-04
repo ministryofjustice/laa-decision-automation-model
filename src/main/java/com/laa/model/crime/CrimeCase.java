@@ -6,6 +6,8 @@ public class CrimeCase  extends Case{
 	
 	private InterestOfJustice interestOfJustice;
 
+	private Court court;
+
 	private CaseType caseType;
 
 	public InterestOfJustice getInterestOfJustice() {
@@ -15,6 +17,14 @@ public class CrimeCase  extends Case{
 	public void setInterestOfJustice(InterestOfJustice interestOfJustice) {
 		this.interestOfJustice = interestOfJustice;
 	}
+
+    public Court getCourt() {
+        return court;
+    }
+
+    public void setCourt(Court court) {
+        this.court = court;
+    }
 
     public CaseType getCaseType() {
         return caseType;

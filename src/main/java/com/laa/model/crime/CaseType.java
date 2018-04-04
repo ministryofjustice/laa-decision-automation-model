@@ -1,7 +1,5 @@
 package com.laa.model.crime;
 
 public enum CaseType {
-
-    MEG_COURT, CRIME_COURT
-
-}
+    INDICTABLE,  TRIAL_IN_CROWN_COURT, SUMMARY_ONLY
+    }
