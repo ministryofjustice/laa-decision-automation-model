@@ -33,7 +33,7 @@ public class CivilDecisionReport extends DecisionReport {
 	
 	private boolean domesticViolenceWaiver;
 	
-	private boolean measnPassed;
+	private boolean meansPassed;
 
 	public EmploymentStatus getEmplyomentStatus() {
 		return emplyomentStatus;
@@ -140,12 +140,14 @@ public class CivilDecisionReport extends DecisionReport {
 		this.domesticViolenceWaiver = domesticViolenceWaiver;
 	}
 
-	public boolean isMeasnPassed() {
-		return measnPassed;
+	public boolean isMeansPassed() {
+		return meansPassed;
 	}
 
-	public void setMeasnPassed(boolean measnPassed) {
-		this.measnPassed = measnPassed;
+	public void setMeansPassed(boolean meansPassed) {
+		this.meansPassed = meansPassed;
 	}
+
+	
 
 }
