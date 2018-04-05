@@ -8,7 +8,7 @@ public class CapitalAssets {
 	
 	private AssetType assetType;
 	
-	private BigDecimal amountInPrinciple = BigDecimal.ZERO;
+	private BigDecimal amount = BigDecimal.ZERO;
 
 	public AssetType getAssetType() {
 		return assetType;
@@ -18,13 +18,15 @@ public class CapitalAssets {
 		this.assetType = assetType;
 	}
 
-	public BigDecimal getAmountInPrinciple() {
-		return amountInPrinciple;
+	public BigDecimal getAmount() {
+		return amount;
 	}
 
-	public void setAmountInPrinciple(BigDecimal amountInPrinciple) {
-		this.amountInPrinciple = amountInPrinciple;
+	public void setAmount(BigDecimal amount) {
+		this.amount = amount;
 	}
+
+	
 
 	
 }
