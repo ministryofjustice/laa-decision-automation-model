@@ -9,9 +9,9 @@ public class CrimeMeansDecisionReport extends DecisionReport {
 
     private CrimeAssessmentResult crimeAssessmentResult;
 
-    // do we need to show partner or other dependent emplyomentStatus??
+    // do we need to show partner or other dependent employmentStatus??
 
-    private EmploymentStatus emplyomentStatus;
+    private EmploymentStatus employmentStatus;
 
     private BigDecimal employmentIncome;
 
@@ -25,7 +25,66 @@ public class CrimeMeansDecisionReport extends DecisionReport {
 
     private BigDecimal adjustedIncome;
 
-    private BigDecimal weighting;
+    private BigDecimal partnerWeight;
+
+    private BigDecimal childWeight;
+
+    private BigDecimal totalWeight;
+
+    private boolean adjustedIncomeBelowLowerThreshold;
+
+    private CourtType courtType;
+
+    private CaseType caseType;
+
+
+    public CourtType getCourtType() {
+        return courtType;
+    }
+
+    public void setCourtType(CourtType courtType) {
+        this.courtType = courtType;
+    }
+
+    public CaseType getCaseType() {
+        return caseType;
+    }
+
+    public void setCaseType(CaseType caseType) {
+        this.caseType = caseType;
+    }
+
+    public boolean isAdjustedIncomeBelowLowerThreshold() {
+        return adjustedIncomeBelowLowerThreshold;
+    }
+
+    public void setAdjustedIncomeBelowLowerThreshold(boolean adjustedIncomeBelowLowerThreshold) {
+        this.adjustedIncomeBelowLowerThreshold = adjustedIncomeBelowLowerThreshold;
+    }
+
+    public BigDecimal getPartnerWeight() {
+        return partnerWeight;
+    }
+
+    public void setPartnerWeight(BigDecimal partnerWeight) {
+        this.partnerWeight = partnerWeight;
+    }
+
+    public BigDecimal getChildWeight() {
+        return childWeight;
+    }
+
+    public void setChildWeight(BigDecimal childWeight) {
+        this.childWeight = childWeight;
+    }
+
+    public BigDecimal getTotalWeight() {
+        return totalWeight;
+    }
+
+    public void setTotalWeight(BigDecimal totalWeight) {
+        this.totalWeight = totalWeight;
+    }
 
 
     public CrimeAssessmentResult getCrimeAssessmentResult() {
@@ -36,12 +95,12 @@ public class CrimeMeansDecisionReport extends DecisionReport {
         this.crimeAssessmentResult = crimeAssessmentResult;
     }
 
-    public EmploymentStatus getEmplyomentStatus() {
-        return emplyomentStatus;
+    public EmploymentStatus getEmploymentStatus() {
+        return employmentStatus;
     }
 
-    public void setEmplyomentStatus(EmploymentStatus emplyomentStatus) {
-        this.emplyomentStatus = emplyomentStatus;
+    public void setEmploymentStatus(EmploymentStatus employmentStatus) {
+        this.employmentStatus = employmentStatus;
     }
 
     public BigDecimal getEmploymentIncome() {
@@ -84,11 +143,4 @@ public class CrimeMeansDecisionReport extends DecisionReport {
         this.adjustedIncome = adjustedIncome;
     }
 
-    public BigDecimal getWeighting() {
-        return weighting;
-    }
-
-    public void setWeighting(BigDecimal weighting) {
-        this.weighting = weighting;
-    }
 }
