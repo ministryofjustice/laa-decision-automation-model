@@ -34,8 +34,8 @@ public class EmployedIncome {
 	public void setFrequency(PaymentFrequency frequency) {
 		this.frequency = frequency;
 	}
-	
-	
 
-	
+
+
+
 }

@@ -4,6 +4,7 @@ public enum OutgoingType {
 	
 	CHILD_CARE_FEES,
 	MORTGAGE_PAYMENT,
+	COUNCIL_TAX,
 	RENTAL_ACCOMODATION
 
 }

@@ -2,7 +2,7 @@ package com.laa.model.crime;
 
 import java.math.BigDecimal;
 
-public enum AgeRange {
+public enum Weight {
 
     ZERO_TO_ONE(0, 1, BigDecimal.valueOf(0.15)),
     TWO_TO_FOUR(2, 4, BigDecimal.valueOf(0.30)),
@@ -16,13 +16,13 @@ public enum AgeRange {
     private int upperBound;
     private BigDecimal factor;
 
-    AgeRange(int lowerBound, int upperBound, BigDecimal factor) {
+    Weight(int lowerBound, int upperBound, BigDecimal factor) {
         this.lowerBound = lowerBound;
         this.upperBound = upperBound;
         this.factor = factor;
     }
 
-    public BigDecimal weightValue(int lower, int upper) {
+    public static BigDecimal weightValue(int lower, int upper) {
 
         if (lower >= 0 && upper <= 1) {
             return ZERO_TO_ONE.factor;
