@@ -1,6 +1,7 @@
 package com.laa.model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Partner {
 	
@@ -8,7 +9,7 @@ public class Partner {
 	
 	private EmployedIncome employedIncome;
 	
-	private OtherIncome otherIncome;
+	private List<OtherIncome> otherIncome;
 
 	public LocalDate getDob() {
 		return dob;
@@ -26,13 +27,12 @@ public class Partner {
 		this.employedIncome = employedIncome;
 	}
 
-	public OtherIncome getOtherIncome() {
+
+	public List<OtherIncome> getOtherIncome() {
 		return otherIncome;
 	}
 
-	public void setOtherIncome(OtherIncome otherIncome) {
+	public void setOtherIncome(List<OtherIncome> otherIncome) {
 		this.otherIncome = otherIncome;
 	}
-	
-
 }

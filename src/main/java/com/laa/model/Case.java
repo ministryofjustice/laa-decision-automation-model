@@ -9,7 +9,6 @@ public abstract class Case {
 	private LocalDate dob;
 	private MeansInformation meansInformation;
 
-
 	public String getFirstName() {
 		return firstName;
 	}
