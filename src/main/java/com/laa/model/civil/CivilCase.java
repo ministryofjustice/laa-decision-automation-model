@@ -4,12 +4,15 @@ import java.time.LocalDate;
 import java.util.List;
 
 import com.laa.model.Case;
+import com.laa.model.civil.enus.InvolvementType;
 import com.laa.model.enums.ProceedingType;
 
 public class CivilCase extends Case {
 
 	private LocalDate dateBecameAwareOfProceedings;
 	private List<ProceedingType> proceedings;
+	
+	private InvolvementType involvementType = InvolvementType.APPLICANT;
 
 	private String certificateAppliedFor;
 
@@ -48,6 +51,14 @@ public class CivilCase extends Case {
 
 	public void setMeritsAssessment(MeritsInformation meritsAssessment) {
 		this.meritsAssessment = meritsAssessment;
+	}
+
+	public InvolvementType getInvolvementType() {
+		return involvementType;
+	}
+
+	public void setInvolvementType(InvolvementType involvementType) {
+		this.involvementType = involvementType;
 	}
 
 }
