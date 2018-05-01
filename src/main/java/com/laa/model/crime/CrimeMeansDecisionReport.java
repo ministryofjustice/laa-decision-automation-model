@@ -9,15 +9,13 @@ public class CrimeMeansDecisionReport extends DecisionReport {
 
     private CrimeAssessmentResult crimeAssessmentResult;
 
-    // do we need to show partner or other dependent emplyomentStatus??
-
-    private EmploymentStatus emplyomentStatus;
+    private EmploymentStatus employmentStatus;
 
     private BigDecimal employmentIncome;
 
-    private BigDecimal payeAndNi;
+    private BigDecimal partnerEmploymentIncome;
 
-    // does this other income includes partner as well
+    private BigDecimal payeAndNi;
 
     private BigDecimal otherIncome;
 
@@ -25,7 +23,71 @@ public class CrimeMeansDecisionReport extends DecisionReport {
 
     private BigDecimal adjustedIncome;
 
-    private BigDecimal weighting;
+    private BigDecimal disposableIncome;
+
+    private BigDecimal partnerWeight;
+
+    private BigDecimal childWeight;
+
+    private BigDecimal totalWeight;
+
+    private BigDecimal totalOutgoings;
+
+    private boolean adjustedIncomeBelowLowerThreshold;
+
+    private BigDecimal adjustedLivingAllowance;
+
+    private CourtType courtType;
+
+    private CaseType caseType;
+
+    public CourtType getCourtType() {
+        return courtType;
+    }
+
+    public void setCourtType(CourtType courtType) {
+        this.courtType = courtType;
+    }
+
+    public CaseType getCaseType() {
+        return caseType;
+    }
+
+    public void setCaseType(CaseType caseType) {
+        this.caseType = caseType;
+    }
+
+    public boolean isAdjustedIncomeBelowLowerThreshold() {
+        return adjustedIncomeBelowLowerThreshold;
+    }
+
+    public void setAdjustedIncomeBelowLowerThreshold(boolean adjustedIncomeBelowLowerThreshold) {
+        this.adjustedIncomeBelowLowerThreshold = adjustedIncomeBelowLowerThreshold;
+    }
+
+    public BigDecimal getPartnerWeight() {
+        return partnerWeight;
+    }
+
+    public void setPartnerWeight(BigDecimal partnerWeight) {
+        this.partnerWeight = partnerWeight;
+    }
+
+    public BigDecimal getChildWeight() {
+        return childWeight;
+    }
+
+    public void setChildWeight(BigDecimal childWeight) {
+        this.childWeight = childWeight;
+    }
+
+    public BigDecimal getTotalWeight() {
+        return totalWeight;
+    }
+
+    public void setTotalWeight(BigDecimal totalWeight) {
+        this.totalWeight = totalWeight;
+    }
 
 
     public CrimeAssessmentResult getCrimeAssessmentResult() {
@@ -36,12 +98,12 @@ public class CrimeMeansDecisionReport extends DecisionReport {
         this.crimeAssessmentResult = crimeAssessmentResult;
     }
 
-    public EmploymentStatus getEmplyomentStatus() {
-        return emplyomentStatus;
+    public EmploymentStatus getEmploymentStatus() {
+        return employmentStatus;
     }
 
-    public void setEmplyomentStatus(EmploymentStatus emplyomentStatus) {
-        this.emplyomentStatus = emplyomentStatus;
+    public void setEmploymentStatus(EmploymentStatus employmentStatus) {
+        this.employmentStatus = employmentStatus;
     }
 
     public BigDecimal getEmploymentIncome() {
@@ -84,11 +146,37 @@ public class CrimeMeansDecisionReport extends DecisionReport {
         this.adjustedIncome = adjustedIncome;
     }
 
-    public BigDecimal getWeighting() {
-        return weighting;
+    public BigDecimal getDisposableIncome() {
+        return disposableIncome;
     }
 
-    public void setWeighting(BigDecimal weighting) {
-        this.weighting = weighting;
+    public void setDisposableIncome(BigDecimal disposableIncome) {
+        this.disposableIncome = disposableIncome;
     }
+
+    public BigDecimal getTotalOutgoings() {
+        return totalOutgoings;
+    }
+
+    public void setTotalOutgoings(BigDecimal totalOutgoings) {
+        this.totalOutgoings = totalOutgoings;
+    }
+
+    public BigDecimal getAdjustedLivingAllowance() {
+        return adjustedLivingAllowance;
+    }
+
+    public void setAdjustedLivingAllowance(BigDecimal adjustedLivingAllowance) {
+        this.adjustedLivingAllowance = adjustedLivingAllowance;
+    }
+
+    public BigDecimal getPartnerEmploymentIncome() {
+        return partnerEmploymentIncome;
+    }
+
+    public void setPartnerEmploymentIncome(BigDecimal partnerEmploymentIncome) {
+        this.partnerEmploymentIncome = partnerEmploymentIncome;
+    }
+
+
 }

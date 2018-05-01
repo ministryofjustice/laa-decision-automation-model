@@ -42,8 +42,4 @@ public class EmployedIncome {
 	public void setEmploymentType(EmploymentType employmentType) {
 		this.employmentType = employmentType;
 	}
-	
-	
-
-	
 }
