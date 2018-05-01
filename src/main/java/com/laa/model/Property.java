@@ -22,6 +22,8 @@ public class Property {
 	private boolean subjectToProceedings;
 	
 	private BigDecimal ownserhipSharePct;
+	
+	private boolean mainDwelling;
 
 	public PropertyType getPropertyType() {
 		return propertyType;
@@ -85,6 +87,14 @@ public class Property {
 
 	public void setOwnserhipSharePct(BigDecimal ownserhipSharePct) {
 		this.ownserhipSharePct = ownserhipSharePct;
+	}
+
+	public boolean isMainDwelling() {
+		return mainDwelling;
+	}
+
+	public void setMainDwelling(boolean mainDwelling) {
+		this.mainDwelling = mainDwelling;
 	}
 	
 

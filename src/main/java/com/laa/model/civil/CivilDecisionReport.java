@@ -23,6 +23,12 @@ public class CivilDecisionReport extends DecisionReport {
 	
 	private BigDecimal capitalAssessment;
 	
+	private BigDecimal contributionRate;
+	
+	private BigDecimal contributionAmount;
+	
+	private BigDecimal capitalContribution = BigDecimal.ZERO;
+	
 	private boolean withinGrossIncomeLimit;
 	
 	private boolean withinDisposableIncomeLimit;
@@ -97,6 +103,30 @@ public class CivilDecisionReport extends DecisionReport {
 
 	public void setCapitalAssessment(BigDecimal capitalAssessment) {
 		this.capitalAssessment = capitalAssessment;
+	}
+
+	public BigDecimal getContributionRate() {
+		return contributionRate;
+	}
+
+	public void setContributionRate(BigDecimal contributionRate) {
+		this.contributionRate = contributionRate;
+	}
+
+	public BigDecimal getContributionAmount() {
+		return contributionAmount;
+	}
+
+	public void setContributionAmount(BigDecimal contributionAmount) {
+		this.contributionAmount = contributionAmount;
+	}
+
+	public BigDecimal getCapitalContribution() {
+		return capitalContribution;
+	}
+
+	public void setCapitalContribution(BigDecimal capitalContribution) {
+		this.capitalContribution = capitalContribution;
 	}
 
 	public boolean isWithinGrossIncomeLimit() {
