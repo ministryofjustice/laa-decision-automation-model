@@ -1,7 +1,6 @@
 package com.laa.model.crime;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
 
 public enum Weight {
 
@@ -24,7 +23,28 @@ public enum Weight {
     }
 
     public static BigDecimal weightValue(int lower, int upper) {
-       return Arrays.stream(Weight.values()).filter(weight -> weight.lowerBound == lower && weight.upperBound == upper).findFirst().get().factor;
+
+        if (lower >= 0 && upper <= 1) {
+            return ZERO_TO_ONE.factor;
+        } else if (lower >= 2 && upper <= 4) {
+            return TWO_TO_FOUR.factor;
+        }
+        else if (lower >= 5 && upper <= 7) {
+            return FIVE_TO_SEVEN.factor;
+        }
+        else if (lower >= 8 && upper <= 10) {
+            return EIGHT_TO_TEN.factor;
+        }
+        else if (lower >= 11 && upper <= 12) {
+            return ELEVEN_TO_TWELVE.factor;
+        }
+        else if (lower >= 13 && upper <= 15) {
+            return THIRTEEN_TO_FIFTEEN.factor;
+        }
+        else if (lower >= 16 && upper <= 18) {
+            return SIXTEEN_TO_EIGHTEEN.factor;
+        }
+        return null;
     }
 
 }
