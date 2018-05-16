@@ -10,6 +10,7 @@ import com.laa.model.enums.ProceedingType;
 public class CivilCase extends Case {
 
 	private LocalDate dateBecameAwareOfProceedings;
+	
 	private List<ProceedingType> proceedings;
 	
 	private InvolvementType involvementType = InvolvementType.APPLICANT;

@@ -2,6 +2,8 @@ package com.laa.model.civil.enums;
 
 public enum AssetType {
 	
-	FINANCIAL_BEQUEST
+	FINANCIAL_BEQUEST,
+	VEHICLE,
+	JEWELERY
 
 }

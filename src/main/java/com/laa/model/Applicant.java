@@ -34,7 +34,7 @@ public class Applicant {
 	public void setCapitalAssets(List<CapitalAssets> capitalAssets) {
 		this.capitalAssets = capitalAssets;
 	}
-
 	
+
 
 }

@@ -34,6 +34,7 @@ public class MeansInformation {
 		this.partner = partner;
 	}
 
+
 	public List<Dependent> getDependents() {
 		return dependents;
 	}
@@ -65,8 +66,6 @@ public class MeansInformation {
 	public void setBankAccounts(List<BankAccount> bankAccounts) {
 		this.bankAccounts = bankAccounts;
 	}
-
-	
 	
 	
 }

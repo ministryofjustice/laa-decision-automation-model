@@ -1,1 +1,1 @@
-Decision rule engine mdoel
+Decision rule engine model

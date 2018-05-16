@@ -11,7 +11,11 @@ public class CivilDecisionReport extends DecisionReport {
 
 	private BigDecimal employmentIncome;
 	
+	private BigDecimal partnerEmploymentIncome;
+	
 	private BigDecimal payeAndNi;
+	
+	private BigDecimal partnerPayeAndNi;
 	
 	private BigDecimal otherIncome;
 	
@@ -21,11 +25,13 @@ public class CivilDecisionReport extends DecisionReport {
 
 	private BigDecimal disposableIncome;
 	
+	private BigDecimal partnerDisposableIncome;
+	
 	private BigDecimal capitalAssessment;
 	
 	private BigDecimal contributionRate;
 	
-	private BigDecimal contributionAmount;
+	private BigDecimal contributionAmount = BigDecimal.ZERO;
 	
 	private BigDecimal capitalContribution = BigDecimal.ZERO;
 	
@@ -57,12 +63,28 @@ public class CivilDecisionReport extends DecisionReport {
 		this.employmentIncome = employmentIncome;
 	}
 
+	public BigDecimal getPartnerEmploymentIncome() {
+		return partnerEmploymentIncome;
+	}
+
+	public void setPartnerEmploymentIncome(BigDecimal partnerEmploymentIncome) {
+		this.partnerEmploymentIncome = partnerEmploymentIncome;
+	}
+	
 	public BigDecimal getPayeAndNi() {
 		return payeAndNi;
 	}
 
 	public void setPayeAndNi(BigDecimal payeAndNi) {
 		this.payeAndNi = payeAndNi;
+	}
+	
+	public BigDecimal getPartnerPayeAndNi() {
+		return partnerPayeAndNi;
+	}
+
+	public void setPartnerPayeAndNi(BigDecimal partnerPayeAndNi) {
+		this.partnerPayeAndNi = partnerPayeAndNi;
 	}
 
 	public BigDecimal getOtherIncome() {
@@ -91,6 +113,14 @@ public class CivilDecisionReport extends DecisionReport {
 
 	public BigDecimal getDisposableIncome() {
 		return disposableIncome;
+	}
+
+	public void setPartnerDisposableIncome(BigDecimal partnerDisposableIncome) {
+		this.partnerDisposableIncome = disposableIncome;
+	}
+	
+	public BigDecimal getPartnerDisposableIncome() {
+		return partnerDisposableIncome;
 	}
 
 	public void setDisposableIncome(BigDecimal disposableIncome) {
