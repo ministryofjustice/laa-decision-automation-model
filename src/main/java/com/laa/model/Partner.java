@@ -23,7 +23,7 @@ public class Partner {
 		return employedIncome;
 	}
 
-	public void setEmployedIncomeHistory(EmployedIncome employedIncome) {
+	public void setEmployedIncome(EmployedIncome employedIncome) {
 		this.employedIncome = employedIncome;
 	}
 
